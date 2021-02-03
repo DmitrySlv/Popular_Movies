@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
+        style="@style/ColorTextViewLabel"
         android:id="@+id/textViewLabelTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,17 +13,15 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/title"
-        android:textColor="#000000"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         style="@style/BorderStyle"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOriginalTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintBottom_toTopOf="@+id/textViewOriginalTitle"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineCenter"
@@ -47,6 +46,7 @@
 
 
     <TextView
+        style="@style/ColorTextViewLabel"
         android:id="@+id/textViewLabelOriginalTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,8 +54,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/original_title"
-        android:textColor="#000000"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
@@ -83,6 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
+        style="@style/ColorTextViewLabel"
         android:id="@+id/textViewLabelRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,8 +89,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/rating"
-        android:textColor="#000000"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewOriginalTitle" />
 
@@ -115,6 +112,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
+        style="@style/ColorTextViewLabel"
         android:id="@+id/textViewLabelReleaseDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -122,8 +120,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/label_release_date"
-        android:textColor="#000000"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewRating" />
 
@@ -147,6 +143,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
+        style="@style/ColorTextViewLabel"
         android:id="@+id/textViewLabelDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -154,8 +151,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/label_description"
-        android:textColor="#000000"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDate" />
 
@@ -167,7 +162,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLabelDescription" />
 
@@ -180,6 +174,7 @@
 
 
     <TextView
+        style="@style/ColorTextViewLabel"
         android:id="@+id/textViewLabelTrailers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -187,8 +182,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/trailers_label"
-        android:textColor="#000000"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewOverview" />
 
@@ -210,6 +203,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewLabelReviews"/>
 
     <TextView
+        style="@style/ColorTextViewLabel"
         android:id="@+id/textViewLabelReviews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -217,8 +211,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/reviews"
-        android:textColor="#000000"
-        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerViewTrailers" />
 
